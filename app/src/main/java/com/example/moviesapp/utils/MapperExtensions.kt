@@ -10,3 +10,12 @@ fun Movie.toFavoriteEntity() = FavoriteMovieEntity(
 fun FavoriteMovieEntity.toMovie() = Movie(
     id, title, cast, director, synopsis, posterUrl
 )
+
+fun Movie.toEntity(): FavoriteMovieEntity = FavoriteMovieEntity(
+    id,
+    title,
+    cast,
+    director,
+    synopsis,
+    posterUrl
+)
